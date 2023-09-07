@@ -1,0 +1,64 @@
+.food-container{
+    background-color: orangered;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-food{
+    background-color: rgba(216, 136, 32, 0.5);
+    display: flex;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+
+}
+.add-food-form{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: auto;
+    flex-direction: column;
+}
+.form-control{
+    margin-bottom:20px ;
+}
+.form-control label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(243, 243, 243);
+    font-weight: bolder;
+}
+.form-control input{
+    padding: 10px 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+.form-control input:focus{
+    border: 2px solid rebeccapurple;
+}
+
+.btn-block{
+    background-color: orangered;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 10px;
+    margin: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s all ease-in-out;
+}
+.btn-block:hover{
+    background-color: white;
+    color: orangered;
+    border: 1px solid white;
+}

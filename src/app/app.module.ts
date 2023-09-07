@@ -3,14 +3,35 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooddisplayComponent } from './fooddisplay/fooddisplay.component';
+import {HttpClientModule} from '@angular/common/http';
+import { SignupComponent } from './signup/signup.component';
+import {FormsModule} from "@angular/forms";
+import { LoginComponent } from './login/login.component';
+import { CartComponent } from './cart/cart.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AddfoodComponent } from './addfood/addfood.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooddisplayComponent,
+    SignupComponent,
+    LoginComponent,
+    CartComponent,
+    AddfoodComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    FontAwesomeModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

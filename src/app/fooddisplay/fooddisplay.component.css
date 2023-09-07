@@ -1,0 +1,93 @@
+.food-container{
+margin-top: 20px;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+background-image: url(swiggy.png);
+background-position: center;
+background-repeat: no-repeat;
+}
+.food{
+    width: 200px;
+}
+.main-container{
+    width: 250px;
+    height: auto;
+    background: rgba(255, 200, 200, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+.food{
+    padding: 10px;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title,.address,.discount{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.discount-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.coupon{
+    margin-left: 5px;
+}
+.s-btn{
+    color: orangered;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 10px;
+    margin: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+.s-btn:hover{
+    background-color: orangered;
+    color: #fff;
+    border: 1px solid white;
+}
+.price{
+    font-size: 18px;
+    font-weight: bolder;
+    color: orangered;
+}
+/* Add Food */
+.AddFood{
+    float: right;
+    margin-top: 30px;
+    margin: 20px;
+}
+.AddFood a{
+    background-color: orangered;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 10px;
+    margin: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s all ease-in-out;
+}
+.AddFood a:hover{
+    background-color: white;
+    color: orangered;
+    border: 1px solid white;
+}

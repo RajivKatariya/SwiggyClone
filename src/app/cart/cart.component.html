@@ -1,0 +1,40 @@
+<app-header></app-header>
+<div class="card-container">
+    <div *ngFor="let data of FoodItem; let i=index" class="cart-food">
+        <h1>{{i+1}}</h1>
+        <img src="{{data.image}}" alt="">
+        <h1 class="title">{{data.title}}</h1>
+        
+        <div class="symbol">
+            <fa-icon [icon]="Mins" class="mins" (click)="drop(data)"></fa-icon>
+            <h1 class="quantity">{{data.quantity}}</h1>
+            <fa-icon [icon]="Plus" class="plus" (click)="plus(data)"></fa-icon>
+        </div>
+
+        <h1 class="Price">{{data.price |currency:"INR":'symbol':'3.0'}}</h1>
+        <fa-icon [icon]="icon" (click)="deleteItem(data)" class="delete"></fa-icon>
+    </div>
+    <div class="addmore" *ngIf="FoodItem!=0">
+        <h1>Add more items</h1>
+        <a routerLink="/food"><span><img src="../assets/plus.png"></span></a>
+    </div>
+    <div class="checkOut-btn" *ngIf="FoodItem.length!=0">
+        <h1 class="grandtotal">Totol:-{{grandtotal | currency:"INR":'symbol':'3.0'}}</h1>
+        <button class="empty" (click)="emptyCart()">Empty</button>
+        <button class="checkOut" (click)="checkOut()">CheckOut</button>
+    </div>
+    
+    <div class="empty-container" *ngIf="FoodItem==0">
+        <div class="cooking-image">
+            <img src="../assets/cooking.jpg" alt="">
+        </div>
+        <div class="content-item">
+            <h1>Good Food is Always Cooking</h1>
+            <p>Your cart is empty.Add something from the menu</p>
+        </div>
+        <div class="restaurants-btn">
+            <a routerLink="/food">Browse Food</a>
+        </div>
+    </div>
+    
+</div>

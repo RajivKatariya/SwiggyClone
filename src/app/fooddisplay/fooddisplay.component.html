@@ -1,0 +1,30 @@
+<app-header></app-header>
+<div class="AddFood">
+    <a routerLink="/AddFood">Add Food</a>
+</div>
+<div class="food-container">
+    <div class="food" *ngFor="let data of Food">
+        <div class="main-container">
+            <div class="image">
+                <img src={{data.image}} alt="">
+            </div>
+            <h1 class="title">{{data.title}}</h1>
+            <h1 class="address">{{data.address}}</h1>
+            <div class="content">
+                <p class="first">Rating: {{data.rating}}</p>
+                <p class="second">{{data.time}}</p>
+                <p class="third">{{data.offer}}</p>
+            </div>
+            <div class="discount-container">
+                <p class="discount">{{data.discount}}</p>
+                <p class="coupon">|{{data.coupon}}</p>
+            </div>
+            <div class="btn">
+                <button class="s-btn" (click)="addtocart(data)">Add To Card</button>
+                <p class="price">Price: {{data.price}}₹</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

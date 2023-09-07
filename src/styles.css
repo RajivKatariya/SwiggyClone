@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 10px 10px 10px red
+}
+.home a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+}
+.logo{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(7, 6, 6);
+    font-size: 15px;
+    font-weight: bold;
+}
+.logo img{
+    width: 40px;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li {
+    margin: 10px;
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(7, 6, 6);
+    font-size: 15px;
+    font-weight: bold;
+}

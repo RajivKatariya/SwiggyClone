@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main">
+        <div class="middle">
+            <img src="../assets/signUp.jpg" alt="">
+        </div>
+        <form>
+            <h1>SignUp</h1>
+            <div class="Name">
+                <input type="text" name="userName" #userName placeholder="Enter Your Name" [(ngModel)]="signupObj.userName">
+            </div>
+            <div class="Email">
+                <input type="email" name="email" #email placeholder="Enter Emailid"  [(ngModel)]="signupObj.email">
+            </div>
+            <div class="Password">
+                <input type="password" name="password" #passsword placeholder="Enter Your Password" [(ngModel)]="signupObj.password">
+            </div>
+            <div class="btn">
+                <button type="submit" class="s-btn" (click)="getData()">Sign Up</button>
+                <a href="" class="register" routerLink="/Login">Already User!</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

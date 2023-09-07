@@ -1,0 +1,28 @@
+<div class="food-container">
+    <div class="add-food">
+        <form class="add-food-form" (ngSubmit)="onSubmit()">
+            <div class="form-control">
+                <label for="foodTitle">Food Name</label>
+                <input type="text" name="foodTitle" [(ngModel)]="foodTitle" id="foodTitle" placeholder="Add Food Name" />
+            </div>
+            <div class="form-control">
+                <label for="image">Image Url</label>
+                <input type="text" name="image" [(ngModel)]="image" id="image" placeholder="Add Image url" />
+            </div>
+            <div class="form-control">
+                <label for="address">Restaurants Address</label>
+                <input type="text" name="address" [(ngModel)]="address" id="address" placeholder="Restaurants Address" />
+            </div>
+            <div class="form-control">
+                <label for="discount">Food Discount</label>
+                <input type="text" name="discount" [(ngModel)]="discount" id="discount" placeholder="Discount" />
+            </div>
+            <div class="form-control">
+                <label for="price">Food Price</label>
+                <input type="text" name="price" [(ngModel)]="price" id="price" placeholder="Food Price" />
+            </div>
+            <input type="submit" value="Add Food" class="btn btn-block" />
+        </form>
+    </div>
+</div>
+
