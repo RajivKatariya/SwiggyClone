@@ -21,7 +21,7 @@
     <div class="checkOut-btn" *ngIf="FoodItem.length!=0">
         <h1 class="grandtotal">Totol:-{{grandtotal | currency:"INR":'symbol':'3.0'}}</h1>
         <button class="empty" (click)="emptyCart()">Empty</button>
-        <button class="checkOut" (click)="checkOut()">CheckOut</button>
+        <button class="checkOut" routerLink="/CheckOut">CheckOut</button>
     </div>
     
     <div class="empty-container" *ngIf="FoodItem==0">

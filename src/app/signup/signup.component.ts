@@ -14,11 +14,13 @@ export class SignupComponent implements OnInit {
    password:''
   };
 
+  length:any
   constructor(private router:Router) { }
 
   ngOnInit(): void {
     this.getData();
   }
+
   getData(){
     this.signupUsers.push(this.signupObj);
     console.log(this.signupUsers);
@@ -28,7 +30,9 @@ export class SignupComponent implements OnInit {
       email:'',
       password:''
     }
-    // this.router.navigate(['/Login']);
+    if(localStorage.length!=this.signupUsers.length){
+    this.router.navigateByUrl("/Login");
+    }
   }
 
 }

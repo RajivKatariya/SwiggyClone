@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddfoodComponent } from './addfood/addfood.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { AddfoodComponent } from './addfood/addfood.component';
     LoginComponent,
     CartComponent,
     AddfoodComponent,
+    CheckoutComponent,
 
   ],
   imports: [

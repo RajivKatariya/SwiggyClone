@@ -18,5 +18,6 @@ export class HeaderComponent implements OnInit {
    this.totalitem= res.length;
     })
   }
+  
 
 }

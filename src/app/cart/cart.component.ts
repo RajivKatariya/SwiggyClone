@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../api/cart.service';
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 import {faTrash} from '@fortawesome/free-solid-svg-icons';
 import {faPlus} from '@fortawesome/free-solid-svg-icons';
 import {faMinus} from '@fortawesome/free-solid-svg-icons';
@@ -35,9 +35,9 @@ export class CartComponent implements OnInit {
     this.cart.removecartItem(data)
   }
 
-  checkOut(){
-    Swal.fire("Thank You.....",'Your Order Sucessfully Placed!','success');
-  }
+  // checkOut(){
+  //   Swal.fire("Thank You.....",'Your Order Sucessfully Placed!','success');
+  // }
 
 plus(data:any){
 data.quantity++
